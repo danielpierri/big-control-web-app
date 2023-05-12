@@ -1,6 +1,6 @@
 {
   "homepage": "https://www.bigcontrol.com.br",
-  "name": "big-control-app",
+  "name": "big-control-web-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
