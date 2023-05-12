@@ -1,0 +1,332 @@
+@import "../variables/variables";
+
+/* === NAV === */
+
+.nav {
+  display: flex;
+  position: relative;
+  // border: 1px solid red;
+
+  &::after {
+    content: "";
+    background: linear-gradient(to right, transparent, $color-light-gold, transparent);
+    height: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+.nav__list {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  list-style: none;
+  /* border: 1px solid red; */
+}
+
+.nav__list li {
+  margin-inline: .4em;
+}
+
+.nav__link {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav__link.active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav__link.pending {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media (min-width: 55em) {
+  .hidden {
+    display: none;
+  }
+
+  .nav {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .nav__list {
+    align-items: center;
+    margin-top: 0em;
+    margin-right: 3em;
+    /* border: 1px solid red; */
+  }
+  
+  .nav__link {
+    position: relative;
+    margin: 0 1em 0;
+    padding-bottom: 1em;
+    letter-spacing: .1em;
+    transition: all .2s;
+  }
+  
+  .nav__link:last-child {
+    margin-right: 0;
+  }
+
+  .nav__link:hover::after,
+  .nav__link:focus::after {
+    animation-name: underline;
+    animation-duration: .3s;
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: inline;
+    height: 3px;
+    width: 100%;
+    background-color: #D6B34B;
+    border-radius: 50px;
+    transition: .1s;
+  }
+  
+  @keyframes underline {
+    from {width: 0%}
+    to {width: 100%}
+  }
+
+  .nav__link.active {
+    /* border: 1px solid red; */
+    color: #FFF;
+    position: relative;
+    transition: .3s;
+  }
+  
+  .nav__link.active::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: inline;
+    height: 3px;
+    width: 100%;
+    background-color: #D6B34B;
+    border-radius: 50px;
+    transition: .1s;
+  }
+  
+  .nav__link.active:hover::after,
+  .nav__link:focus::after {
+    animation: none;
+    box-shadow: 0 0 10px #ffd36d;
+  }
+  
+  nav img {
+    height: 150px;
+    margin-left: 3em;
+  }
+
+  .menu-wrapper__btn {
+    display: none;
+    visibility: hidden;
+  }
+  
+}
+
+@media (max-width: 55em) {
+  .nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    z-index: 1000;
+    
+    &__container,
+    &__container--scrolled {
+      // border: 1px solid red;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: background .25s;
+    }
+    
+    &__container--scrolled {
+      background-color: #22222271;
+      z-index: 1000;
+    }
+
+    &__container--scrolled::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .nav > div {
+    /* border: 1px solid red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* margin: 1.5em; */
+  }
+  
+  .nav img {
+    /* border: 1px solid red; */
+    max-width: 90px;
+    z-index: 1000;
+  }
+
+  /* .menu-wrapper,
+  .menu-wrapper input {
+    border: 1px solid red;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 2;
+  } */
+
+  .nav__wrapper {
+    border-radius: 100%;
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    // z-index: 1000;
+    transform: scale(0);
+    transition: all .4s;
+  }
+
+  .nav__wrapper--isDisplayed {
+    background-color: rgba(33, 33, 33, 0.443);
+    backdrop-filter: blur(30px);
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform .2s;
+    // z-index: 1000;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    min-width: max-content;
+    margin: 0 auto;
+  }
+
+  .nav__link {
+    /* border: 1px solid red; */
+    color: #FFF;
+    display: block;
+    margin-block: .25em;
+    padding: 1.25em;
+    transition: color .2s;
+  }
+
+  .nav__link:hover,
+  .nav__link:focus {
+    color: #FFD36D;
+  }
+
+  .menu-wrapper__btn {
+    position: relative;
+    cursor: pointer;
+    padding: 1px 20px;
+    // border: 1px solid red;
+    z-index: 1000;
+  }
+
+  .menu-wrapper__btn:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu__btn,
+  .menu__btn::before,
+  .menu__btn::after,
+  .menu__btn--active,
+  .menu__btn--active::before,
+  .menu__btn--active::after {
+    transition: all .5s;
+  }
+  .menu__btn {
+    cursor: pointer;
+    position: relative;
+    background-color: #FFD36D;
+    border: none;
+    /* position: absolute; */
+    top: 35px;
+    height: 2px;
+    width: 30px;
+  }
+
+  .menu__btn::before,
+  .menu__btn::after {
+    content: "";
+    position: absolute;
+    background-color: #FFD36D;
+    top: 10px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    width: 30px;
+  }
+
+  .menu__btn::after {
+    top: -10px;
+    background-color: #FFD36D;
+    transition: all .5s;
+  }
+
+  .menu__btn--active {
+    cursor: pointer;
+    position: relative;
+    background-color: #FFD36D;
+    border: none;
+    /* position: absolute; */
+    top: 35px;
+    height: 2px;
+    width: 30px;
+    transform: rotate(315deg);
+  }
+
+  .menu__btn--active::before {
+    content: "";
+    position: absolute;
+    background-color: #FFD36D;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    transform: rotate(-90deg);
+  }
+
+  .menu__btn--active::after {
+    content: "";
+    position: absolute;
+    background-color: #FFD36D;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0px;
+    width: 30px;
+    transform: rotate(-90deg);
+  }
+}

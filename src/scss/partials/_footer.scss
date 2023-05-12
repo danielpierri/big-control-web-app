@@ -1,0 +1,152 @@
+@import "../variables/variables";
+
+.footer__container {
+  background-color: #111;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  font-size: 1.5rem;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  
+  &__contact,
+  &__social-media {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 1rem;
+  }
+  
+  &__contact {
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+  
+  
+  &__social-media {
+    font-size: 2.5rem;
+  }
+  
+  &__contact li,
+  &__social-media li {
+    list-style: none;
+    margin-bottom: .75rem;
+  }
+  
+  &__contact li {
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  
+  &__contact li:first-child {
+    margin-top: 1rem;
+  }
+  
+  &__contact li i {
+    color: $color-light-gold;
+    text-align: center;
+    min-width: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__contact li a {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__contact li a:hover {
+    color: $color-light-gold;
+    transition: color .2s;
+  }
+
+  &__hours {
+      text-align: center;
+      color: $color-white;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
+  
+  &__social-media a {
+    text-decoration: none;
+    color: $color-light-gold;
+    padding-inline: 1rem;
+    transition: color .2s;
+  }
+  
+  &__social-media a:hover {
+    color: $color-white;
+  }
+  
+  &__social-media li:hover {
+    color: $color-white;
+  }
+  
+  &__copyright {
+    min-width: 100%;
+  }
+  
+  &__copyright p {
+    background-color: $color-light-gold;
+    color: $color-black;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+.signature {
+  color: #ffffffbe;
+  text-align: center;
+  font-size: 1.25rem;
+
+  & a {
+    text-decoration: none;
+    color: #ffffffbe;
+    transition: color .2s;
+
+    &:hover {
+      color: $color-light-gold;
+    }
+  }
+}
+
+@media (max-width: 55em) {
+  .footer {
+
+    &__contact {
+      margin-left: 1rem;
+    }
+
+    &__contact li:first-child {
+      margin-top: .5rem;
+    }
+    &__contact,
+    &__hours {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    &__social-media a {
+      padding-inline: .5rem;
+      transition: color .2s;
+      font-size: 2rem;
+    }
+
+    &__copyright p {
+      font-size: 1rem;
+    }
+  }
+}
