@@ -8,7 +8,7 @@ export default function Footer({ style }) {
         <div>
           <ul className="footer__contact">
             <li><i className="fa-solid fa-phone"></i> <a href="tel:+5521984870140" target="_blank" rel="noreferrer">(21) 98487-0140</a></li>
-            <li><i className="fa-solid fa-envelope"></i> <a href="mailto:evandro@bigcontrol.com.br" target="_blank" rel="noreferrer">comercial@bigcontrol.com.br</a></li>
+            <li><i className="fa-solid fa-envelope"></i> <a href="mailto:comercial@bigcontrol.com.br" target="_blank" rel="noreferrer">comercial@bigcontrol.com.br</a></li>
             <li><i className="fa-solid fa-location-dot"></i> <a href="https://goo.gl/maps/GNWjRTaahop9kZx28" target="_blank" rel="noreferrer">Rua do Rosário, 141, Sobreloja 207, Centro, RJ</a></li>
           </ul>
             <p className="footer__hours">Segunda a sexta de 9h às 18h</p>
