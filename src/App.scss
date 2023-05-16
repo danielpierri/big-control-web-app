@@ -79,9 +79,10 @@ body {
 .scroll-btn__container {
   color: red;
   position: fixed;
-  top: 0;
+  bottom: 2px;
   // left: 0;
   right: 2px;
+  z-index: 100;
 }
 
 .scroll-btn {

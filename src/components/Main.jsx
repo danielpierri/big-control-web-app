@@ -9,8 +9,8 @@ import ScrollToTopBtn from "./utils/ScrollToTopBtn"
 export default function Main() {
   return (
     <div className="main__container">
-      <ScrollToTopBtn />
       <div className="main__section">
+      <ScrollToTopBtn />
 
         <section className="main main__article service-1 dark-bg">
 

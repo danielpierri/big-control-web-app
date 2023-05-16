@@ -3,14 +3,14 @@ import Footer from "../components/Footer"
 import Phone from "../components/Phone"
 import projetosHome from "../img/projetos-home.jpg"
 import { NavLink } from "react-router-dom"
-import ScrollToTop from "../components/utils/ScrollToTop"
+import ScrollToTopBtn from "../components/utils/ScrollToTopBtn"
 
-export default function Contact() {
+export default function Project() {
   return (
     <div>
       <Navbar />
-      <ScrollToTop />
       <div className="projects">
+        <ScrollToTopBtn />
         <div className="project__container">
           <h2 className="project__title">PROJETOS DE CONDOMÍNIO</h2>
           <div className="project__img__container">
