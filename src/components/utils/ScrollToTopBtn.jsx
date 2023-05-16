@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import ScrollTopArrow from "../../img/scroll-top-arrow.png"
 
 export default function ScrollToTopBtn() {
   const [showBtn, setShowBtn] = useState(false)
@@ -25,7 +26,7 @@ export default function ScrollToTopBtn() {
       {showBtn && (
         <div className={"scroll-btn__container"}>
           <button className="scroll-btn" onClick={handleScrollToTop}>
-            {/* img */}CLIQUE AQUI
+            <img src={ScrollTopArrow} className="scroll-btn__img" />
           </button>
         </div>
       )}

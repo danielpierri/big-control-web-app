@@ -79,14 +79,47 @@ body {
 .scroll-btn__container {
   color: red;
   position: fixed;
-  bottom: 2px;
+  bottom: 20px;
   // left: 0;
-  right: 2px;
+  left: 20px;
   z-index: 100;
 }
 
 .scroll-btn {
+  cursor: pointer;
+  background-color: $color-light-gold;
+  border: transparent;
+  border-radius: 50%;
+  transition: all .2s;
+  animation-name: scroll-top-btn-fade-in;
+  animation-duration: 500ms;
 
+  &:hover,
+  &:focus {
+    background-color: $color-accent-gold;
+    box-shadow: 0 0 10px #d6b34b;
+    transform: scale(1.02);
+  }
+
+  &:active {
+    background-color: #d6b34b;
+    transform: scale((0.99));
+  }
+
+  &__img {
+    max-width: 50px;
+    padding: 10px;
+  }
+}
+
+@keyframes scroll-top-btn-fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes scroll-top-btn-fade-out {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @media (min-width: 55em) {}
