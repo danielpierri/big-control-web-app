@@ -75,6 +75,19 @@ body {
   background: $color-accent-gold;
 }
 
+/* Scroll To Top Button */
+.scroll-btn__container {
+  color: red;
+  position: fixed;
+  top: 0;
+  // left: 0;
+  right: 2px;
+}
+
+.scroll-btn {
+
+}
+
 @media (min-width: 55em) {}
 
 @media (max-width: 55em) {}

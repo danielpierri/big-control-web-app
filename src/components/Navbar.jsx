@@ -45,6 +45,11 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/store" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+                <a href={() => false}>LOJA</a>
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/services" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
                 <a href={() => false}>SERVIÇOS</a>
               </NavLink>

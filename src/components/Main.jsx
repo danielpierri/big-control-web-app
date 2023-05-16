@@ -4,10 +4,12 @@ import controleDeAcessoHome from "../img/controle-de-acesso-home.jpg"
 import projetosHome from "../img/projetos-home.jpg"
 import monitoramentoEmTempoReal from "../img/monitoramento-em-tempo-real-home.jpg"
 import manutencaoHome from "../img/manutencao-home.jpg"
+import ScrollToTopBtn from "./utils/ScrollToTopBtn"
 
 export default function Main() {
   return (
     <div className="main__container">
+      <ScrollToTopBtn />
       <div className="main__section">
 
         <section className="main main__article service-1 dark-bg">

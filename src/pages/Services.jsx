@@ -8,11 +8,13 @@ import cardCftvAnalogico from "../img/card-cftv-analogico.jpg"
 import cardCftvIp from "../img/card-cftv-ip.jpg"
 import cardCftvPerimetral from "../img/card-cftv-perimetral.jpg"
 import { NavLink } from "react-router-dom"
+import ScrollToTopBtn from "../components/utils/ScrollToTopBtn"
 
 export default function Services() {
   return (
     <div className="services__bg">
       <Navbar />
+      <ScrollToTopBtn />
       <div className="services__container">
         <main className="services">
           <div className="service service-1">
