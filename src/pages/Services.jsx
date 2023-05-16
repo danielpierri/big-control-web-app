@@ -4,6 +4,9 @@ import Phone from "../components/Phone"
 import cftvServicos from "../img/cftv-servicos.jpg"
 import cercaEletricaServicos from "../img/cerca-eletrica-servicos.jpg"
 import controleDeAcessoServicos from "../img/controle-de-acesso-servicos.jpg"
+import cardCftvAnalogico from "../img/card-cftv-analogico.jpg"
+import cardCftvIp from "../img/card-cftv-ip.jpg"
+import cardCftvPerimetral from "../img/card-cftv-perimetral.jpg"
 import { NavLink } from "react-router-dom"
 
 export default function Services() {
@@ -27,7 +30,7 @@ export default function Services() {
             </p>
             <div className="services__card__container">
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardCftvIp} alt="" />
                 <h3>CÂMERAS EM REDE</h3>
                 <p>
                   Câmeras baseadas no protocolo IP para gravação de imagens.
@@ -37,28 +40,9 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardCftvAnalogico} alt="" />
                 <h3>CÂMERAS ANALÓGICAS</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
-                <NavLink to={""} className={"services__card__link"}>
-                  conhecer
-                </NavLink>
-              </div>
-              <div className="services__card">
-                <img src="" alt="" />
-                <h3>CÂMERAS PERIMETRAIS</h3>
-                <p>
-                  Câmeras com analíticos que detectam invasores humanos e
-                  veículos.
-                </p>
-                <NavLink to={""} className={"services__card__link"}>
-                  conhecer
-                </NavLink>
-              </div>
-              <div className="services__card">
-                <img src="" alt="" />
-                <h3>CÂMERAS LPR</h3>
-                <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
                   conhecer
                 </NavLink>
@@ -94,9 +78,12 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
-                <h3>CÂMERA PERIMETRAL</h3>
-                <p>Câmeras analógicas com gravações digitais.</p>
+                <img src={cardCftvPerimetral} alt="" />
+                <h3>CÂMERAS PERIMETRAIS</h3>
+                <p>
+                  Câmeras com analíticos que detectam invasores humanos e
+                  veículos.
+                </p>
                 <NavLink to={""} className={"services__card__link"}>
                   conhecer
                 </NavLink>
@@ -189,6 +176,14 @@ export default function Services() {
                   Câmeras com analíticos que detectam invasores humanos e
                   veículos.
                 </p>
+                <NavLink to={""} className={"services__card__link"}>
+                  conhecer
+                </NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS LPR</h3>
+                <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
                   conhecer
                 </NavLink>
