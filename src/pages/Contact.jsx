@@ -28,8 +28,10 @@ export default function Contact() {
           setName("")
           setEmail("")
           setMessage("")
+          // Create pop-up component with email confirmation
         }, (err) => {
           console.log("ERRO: ", err)
+          // Create pop-up component with error message
         }
       )
   }
