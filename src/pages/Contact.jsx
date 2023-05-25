@@ -2,7 +2,6 @@ import { useState } from "react";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import emailjs from "@emailjs/browser"
-// import FormSubmitMsg from "../components/FormSubmitMsg";
 
 export default function Contact() {
   const [name, setName] = useState("")
