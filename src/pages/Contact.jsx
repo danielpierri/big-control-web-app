@@ -1,12 +1,15 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import emailjs from "@emailjs/browser"
+// import FormSubmitMsg from "../components/FormSubmitMsg";
 
 export default function Contact() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [submitMessage, setSubmitMessage] = useState("Email enviado com sucesso")
+  // Create useState as object, so it has a String and a Boolean
 
   function sendEmail(e) {
     e.preventDefault()
@@ -28,9 +31,13 @@ export default function Contact() {
           setName("")
           setEmail("")
           setMessage("")
+          setSubmitMessage("Email enviado com sucesso!")
+          setTimeout(() => setSubmitMessage(""), 10000)
           // Create pop-up component with email confirmation
         }, (err) => {
           console.log("ERRO: ", err)
+          setSubmitMessage("Email NÃO enviado!")
+          setTimeout(() => setSubmitMessage(""), 10000)
           // Create pop-up component with error message
         }
       )
@@ -89,6 +96,11 @@ export default function Contact() {
           </form>
         </div>
       </div>
+
+      <div className="submitMessage__container">
+        {submitMessage}
+      </div>
+
       <Footer style={{
         backgroundColor:
           "#22222271",
