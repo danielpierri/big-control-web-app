@@ -7,7 +7,10 @@ export default function Contact() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
-  const [submitMessage, setSubmitMessage] = useState("Email enviado com sucesso")
+  const [submitMessage, setSubmitMessage] = useState({
+    message: "",
+    status: false
+  })
   // Create useState as object, so it has a String and a Boolean
 
   function sendEmail(e) {
@@ -30,13 +33,19 @@ export default function Contact() {
           setName("")
           setEmail("")
           setMessage("")
-          setSubmitMessage("Email enviado com sucesso!")
+          setSubmitMessage({
+            message: "Email enviado com sucesso!",
+            status: true
+          })
           setTimeout(() => setSubmitMessage(""), 10000)
           // Create pop-up component with email confirmation
         }, (err) => {
           console.log("ERRO: ", err)
           setSubmitMessage("Email NÃO enviado!")
-          setTimeout(() => setSubmitMessage(""), 10000)
+          setTimeout(() => setSubmitMessage({
+            message: "ERRO! Email NÃO enviado!",
+            status: true
+          }), 10000)
           // Create pop-up component with error message
         }
       )
@@ -96,8 +105,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="submitMessage__container">
-        {submitMessage}
+      <div className={submitMessage.status ? "submitMessage__container" : "submitMessage__container--hidden"}>
+        {submitMessage.status && submitMessage.message}
       </div>
 
       <Footer style={{

@@ -144,11 +144,23 @@
   }
 }
 
-.submitMessage__container {
+.submitMessage__container,
+.submitMessage__container--hidden {
   position: absolute;
   background-color: $color-light-gold;
+  box-shadow: 0 0 5px #ffeaad;
   right: 10%;
   top: 15%;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  transition: all .5s;
+
+  &--hidden {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 55em) {
