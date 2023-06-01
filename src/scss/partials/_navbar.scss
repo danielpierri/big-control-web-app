@@ -22,7 +22,7 @@
 }
 
 .nav__list {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   display: flex;
   list-style: none;
@@ -30,7 +30,7 @@
 }
 
 .nav__list li {
-  margin-inline: .4em;
+  margin-inline: .7em;
 }
 
 .nav__link {
@@ -86,7 +86,7 @@
     content: "";
     display: inline-block;
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 0px;
     display: inline;
     height: 3px;
@@ -100,7 +100,7 @@
     animation-duration: .3s;
     content: "";
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 0px;
     display: inline;
     height: 3px;
@@ -127,7 +127,7 @@
   .nav__link.active::after {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 0px;
     display: inline;
     height: 3px;
@@ -144,7 +144,7 @@
   }
   
   nav img {
-    height: 150px;
+    height: 125px;
     margin-left: 3em;
   }
 
