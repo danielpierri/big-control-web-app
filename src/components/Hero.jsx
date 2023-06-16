@@ -7,6 +7,20 @@ import "../App.scss"
 const FADE_INTERVAL_MS = 5000
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
 const WORDS_TO_ANIMATE = [
+  "Monitoramento humano em tempo real funciona?",
+  "Quando devo utilizar tecnologia IP?",
+  "Quais Analíticos Inteligentes servem para meu condomínio?",
+  "Se existem tantos produtos para segurança, como você sabe que o seu é o mais adequado?",
+  "Você sabia que existe profissional especializado em projeto de segurança eletrônica e controle de acesso?",
+  "Qual o melhor projeto de segurança para pequenos prédios?",
+  "Gravação em nuvem - Quanto tempo seu condomínio ou empresa precisa?",
+  "Você sabe se o seu equipamento de segurança está gravando?",
+  "Câmera IP ou Analógica - Qual devo usar?",
+  "Segurança Perimetral - Qual a solução mais indicada?",
+  "Gravação de áudio é permitida?",
+  "Onde economizar e onde não economizar?",
+  "Como é a segurança do seu equipamento de segurança?",
+  "Gravação por movimento ou contínua?",
   "Você sabe se suas câmeras estão gravando?",
   "Você sabia que 90% dos roubos são de pessoas de dentro?",
   "Você sabia que é possível combinar beleza e segurança?",
