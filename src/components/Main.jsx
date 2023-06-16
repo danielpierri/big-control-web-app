@@ -20,7 +20,7 @@ export default function Main() {
             <div className="main__img__container main__services__img__container">
               <img src={projetosHome} alt="projetos" className="main__img main__services__img" />
             </div>
-            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <p className="main__text">Big Control</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
           </div>
 
