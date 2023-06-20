@@ -40,6 +40,7 @@ export default function Hero() {
     return () => clearInterval(fadeTimeout)
   }, [fadeProp])
 
+  // In the future, implement a slider.
   useEffect(() => {
     const wordTimeout = setInterval(() => {
       setWordOrder((prevWordOrder) => (prevWordOrder + 1) % WORDS_TO_ANIMATE.length)

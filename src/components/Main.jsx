@@ -20,7 +20,7 @@ export default function Main() {
             <div className="main__img__container main__services__img__container">
               <img src={projetosHome} alt="projetos" className="main__img main__services__img" />
             </div>
-            <p className="main__text">Big Control</p>
+            <p className="main__text">A Big Control conta com vários profissionais especializados e certificados em diversas áreas. Fazemos projetos específicos para seu condomínio ou empresa. Trabalhamos com projetos, execução, locação, manutenção e vendas.</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
           </div>
 
@@ -34,7 +34,7 @@ export default function Main() {
             <div className="main__img__container main__services__img__container">
               <img src={monitoramentoEmTempoReal} alt="monitoramento em tempo real" className="main__img main__services__img" />
             </div>
-            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <p className="main__text">Monitoramos o funcionamento dos seus equipamentos remotamente e diariamente, local e em nuvem. Dessa forma, o cliente não precisa se preocupar se equipamento está gravando corretamente ou não, pois ele com certeza estará.</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
           </div>
 
@@ -48,7 +48,7 @@ export default function Main() {
             <div className="main__img__container main__services__img__container">
               <img src={manutencaoHome} alt="manutenção" className="main__img main__services__img" />
             </div>
-            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <p className="main__text">Nossa manutenção é a mais completa possível a fim de que reduza ao máximo possível o risco de ficar com o sistema de segurança inoperante.</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
           </div>
 
@@ -62,7 +62,7 @@ export default function Main() {
 
           <div className="main__info__container">
             <h3 className="main__title">CFTV</h3>
-            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <p className="main__text">Preencher.</p>
             <a href="index.html" className="main__btn">Continuar lendo</a>
           </div>
 
@@ -76,7 +76,7 @@ export default function Main() {
 
           <div className="main__info__container">
             <h3 className="main__title">SEGURANÇA PERIMETRAL</h3>
-            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <p className="main__text">Existem mais de 8 tipos diferentes de produtos para segurança perimetral. Avaliamos a área do seu condomínio para adotar as que mais trarão segurança e proteção para a sua família.</p>
             <a href="index.html" className="main__btn">Continuar lendo</a>
           </div>
 
@@ -90,7 +90,7 @@ export default function Main() {
 
           <div className="main__info__container">
             <h3 className="main__title">CONTROLE DE ACESSO</h3>
-            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <p className="main__text">Preencher.</p>
             <a href="index.html" className="main__btn">Continuar lendo</a>
           </div>
 
