@@ -86,7 +86,7 @@ export default function Hero() {
 
           <Phone />
           <div className="hero__hours">
-            <p>Segunda a sexta, 9h às 18h</p>
+            <p>Segunda a sexta, 9h às 18h - WEBSITE EM PRODUÇÃO</p>
           </div>
         </div>
         
