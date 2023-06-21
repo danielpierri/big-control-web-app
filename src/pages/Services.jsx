@@ -9,6 +9,8 @@ import cardCftvIp from "../img/card-cftv-ip.jpg"
 import cardCftvPerimetral from "../img/card-cftv-perimetral.jpg"
 import { NavLink } from "react-router-dom"
 import ScrollToTopBtn from "../components/utils/ScrollToTopBtn"
+// Fotos novas: sensor-infravermelho.png; cerca-eletrica-servicos.png; fibra-optica.png; concertina.png; rede-laminada.png; cancela.png; biometria-facial.png; catracas.png; camera-lpr.png
+// Provavelmente trocar os nomes para maior adequação.
 
 export default function Services() {
   return (
@@ -119,7 +121,7 @@ export default function Services() {
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>LANÇA CORTANTE</h3>
+                <h3>LANÇA PERFURANTE</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
                   conhecer
