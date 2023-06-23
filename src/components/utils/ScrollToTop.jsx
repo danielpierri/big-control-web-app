@@ -8,6 +8,13 @@ export default function ScrollToTop() {
     window.scrollTo(0, 0)
   }, [pathname])
 
+  // useEffect(() => {
+  //   let windowScrollTimeout = setTimeout(() => {
+  //     window.scrollTo(0, 0)
+  //     clearTimeout(windowScrollTimeout)
+  //   }, 1)
+  // }, [])
+
   return (null)
 }
 

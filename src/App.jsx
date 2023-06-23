@@ -4,10 +4,13 @@ import Store from "./pages/Store"
 import Services from "./pages/Services"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+import ScrollToTopBtn from "./components/utils/ScrollToTopBtn"
 
 function App() {
+
   return (
     <div className="App">
+      <ScrollToTopBtn />
       <Routes>
         {/* /bigcontrol because of GitHub Pages */}
         <Route path="/" element={ <Home />} />
