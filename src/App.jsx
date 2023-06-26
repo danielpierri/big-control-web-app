@@ -8,7 +8,7 @@ import ScrollToTop from "./components/utils/ScrollToTop"
 
 function App() {
   return (
-    <div className="App">
+    <>
       <ScrollToTop />
       <Routes>
         {/* /bigcontrol because of GitHub Pages */}
@@ -18,7 +18,7 @@ function App() {
         <Route path="/projects" element={ <Projects />} />
         <Route path="/contact" element={ <Contact />} />
       </Routes>
-    </div>
+    </>
   )
 }
 
