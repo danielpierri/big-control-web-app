@@ -7,6 +7,16 @@ import controleDeAcessoServicos from "../img/controle-de-acesso-servicos.jpg"
 import cardCftvAnalogico from "../img/card-cftv-analogico.jpg"
 import cardCftvIp from "../img/card-cftv-ip.jpg"
 import cardCftvPerimetral from "../img/card-cftv-perimetral.jpg"
+import cardBiometriaFacial from "../img/card-biometria-facial.png"
+import cardCameraLpr from "../img/card-camera-lpr.png"
+import cardCancela from "../img/card-cancela.png"
+import cardCatracas from "../img/card-catracas.png"
+import cardCercaEletrica from "../img/card-cerca-eletrica.jpg"
+import cardConcertina from "../img/card-concertina.png"
+import cardFibraOptica from "../img/card-fibra-optica.png"
+import cardRedeLaminada from "../img/card-rede-laminada.png"
+import cardSensorInfravermelho from "../img/card-sensor-infravermelho.jpg"
+import cardLancaPerfurante from "../img/card-lanca-perfurante.jpg"
 import { NavLink } from "react-router-dom"
 import ScrollToTopBtn from "../components/utils/ScrollToTopBtn"
 // Fotos novas: sensor-infravermelho.png; cerca-eletrica-servicos.png; fibra-optica.png; concertina.png; rede-laminada.png; cancela.png; biometria-facial.png; catracas.png; camera-lpr.png
@@ -72,7 +82,7 @@ export default function Services() {
             </p>
             <div className="services__card__container">
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardCercaEletrica} alt="cerca elétrica" />
                 <h3>CERCA ELÉTRICA</h3>
                 <p>
                   Câmeras baseadas no protocolo IP para gravação de imagens.
@@ -93,7 +103,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardSensorInfravermelho} alt="sensor de barreira infravermelho" />
                 <h3>SENSOR INFRAVERMELHO DE BARREIRA</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
@@ -101,7 +111,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardFibraOptica} alt="conjunto de fibra óptica" />
                 <h3>FIBRA ÓTICA DE BARREIRA</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
                 <NavLink to={""} className={"services__card__link"}>
@@ -109,7 +119,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardConcertina} alt="concertina" />
                 <h3>CONCERTINA</h3>
                 <p>
                   Câmeras com analíticos que detectam invasores humanos e
@@ -120,7 +130,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardLancaPerfurante} alt="lança perfurante" />
                 <h3>LANÇA PERFURANTE</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
@@ -128,7 +138,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardRedeLaminada} alt="rede laminada" />
                 <h3>REDE LAMINADA</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
@@ -156,7 +166,7 @@ export default function Services() {
             </p>
             <div className="services__card__container">
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardCancela} alt="cancela de estacionamento" />
                 <h3>CANCELAS</h3>
                 <p>
                   Câmeras baseadas no protocolo IP para gravação de imagens.
@@ -166,7 +176,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardBiometriaFacial} alt="leitura biométrica da face" />
                 <h3>RECONHECIMENTO FACIAL E BIOMÉTRICO</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
                 <NavLink to={""} className={"services__card__link"}>
@@ -174,7 +184,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardCatracas} alt="catracas de controle de acesso" />
                 <h3>CATRACAS</h3>
                 <p>
                   Câmeras com analíticos que detectam invasores humanos e
@@ -185,7 +195,7 @@ export default function Services() {
                 </NavLink>
               </div>
               <div className="services__card">
-                <img src="" alt="" />
+                <img src={cardCameraLpr} alt="reconhecimento de plavas veiculares" />
                 <h3>CÂMERAS LPR</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>
