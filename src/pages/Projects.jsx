@@ -1,7 +1,9 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Phone from "../components/Phone"
-import projetosHome from "../img/projetos-home.jpg"
+import projetosCondominio from "../img/projetos-condominio.jpg"
+import projetosLargaEscala from "../img/projetos-larga-escala.jpg"
+import projetosConsultoria from "../img/projetos-consultoria.jpg"
 import { NavLink } from "react-router-dom"
 import ScrollToTopBtn from "../components/utils/ScrollToTopBtn"
 
@@ -14,13 +16,22 @@ export default function Project() {
         <div className="project__container">
           <h2 className="project__title">PROJETOS PARA CONDOMÍNIOS E EMPRESAS</h2>
           <div className="project__img__container">
-            <img className="project__img" src={projetosHome} alt="" />
+            <img className="project__img" src={projetosCondominio} alt="" />
           </div>
           <p className="project__text">
             A Big Control é uma empresa especializada em projetos e serviços de segurança eletrônica, rede, controle de acesso, segurança patrimonial, infraestrutura, entre outros.
             Se segurança eletrônica fosse tudo igual não haveria tanta variedade de produtos e aplicativos.
             Desenvolvemos projetos e soluções de acordo com a necessidade do seu condomínio ou empresa.
           </p>
+          <div className="project__text">
+            <span>Infraestrutura de cabeamento</span>
+            <span>Planta de infraestrutura</span>
+            <span>Segurança perimetral</span>
+            <span>Monitoramento remoto</span>
+            <span>Segurança dos equipamentos</span>
+            <span>Manutenção</span>
+            <span>Locação</span>
+          </div>
           <NavLink to={""} className={"project__btn"}>
             Entre em contato
           </NavLink>
@@ -29,24 +40,21 @@ export default function Project() {
         <div className="project__container">
           <h2 className="project__title">PROJETOS COMPLETOS E EM LARGA ESCALA</h2>
           <div className="project__img__container">
-            <img className="project__img" src={projetosHome} alt="" />
+            <img className="project__img" src={projetosLargaEscala} alt="" />
           </div>
+          <p className="project__text">
+            Contamos com clientes grandes e estamos sempre apontando para o próximo passo. Na Big Control sabemos que a possibilidade de voar mais alto vem junto com a capacidade técnica, por isso estamos sempre buscando mais conhecimento e inovação.
+          </p>
           <div className="project__text">
-            <span>Infraestrutura de cabeamento</span>
             <span>Infraestrutura de rede</span>
-            <span>Planta de Infraestrutura</span>
             <span>Cabeamento estruturado</span>
-            <span>Tecnologia indicada</span>
-            <span>Segurança perimetral</span>
+            <span>Projetos Modernos</span>
             <span>Analíticos</span>
-            <span>Monitoramento em tempo real</span>
-            <span>Monitoramento remoto</span>
-            <span>Segurança dos equipamentos</span>
+            <span>Inteligência Artificial</span>
             <span>Segurança das informações</span>
             <span>Controle de acesso de pessoas e veículos</span>
-            <span>Mapa de rede</span>
-            <span>Manutenção</span>
-            <span>Locação</span>
+            <span>Reconhecimento Facial</span>
+            <span>Diagrama de ativos</span>
           </div>
           <NavLink to={""} className={"project__btn"}>
             Faça um orçamento
@@ -57,7 +65,7 @@ export default function Project() {
           <h2 className="project__title">CONSULTORIA DE SEGURANÇA</h2>
           <span className="project__subtitle">Seu projeto pode sair de graça</span>
           <div className="project__img__container">
-            <img className="project__img" src={projetosHome} alt="" />
+            <img className="project__img" src={projetosConsultoria} alt="" />
           </div>
           <p className="project__text">
             Ao contratar o PROJETO DE SEGURANÇA da Big Control e posterior sua implantação, o valor do projeto é descontado de sua proposta de serviços e produtos.
