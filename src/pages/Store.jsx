@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { NavLink } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import productsData from "../assets/products.json"
@@ -23,14 +22,15 @@ export default function Store() {
   return (
     <div className="store">
       <Navbar />
+      <h1>Kits de Monitoramento - Locação e Manutenção - WEBSITE EM PRODUÇÃO</h1>
       {product.length > 0 && (
         <div className="store__container">
-        {product.map((product) => { 
-          return (
-          <div key={product.id} className="product__container">
-            <h2 className="product__title">{product.title}</h2>
-            <img src={product.img} alt="anúncio de kit de câmeras" className="product__img" />
-            <p className="product__caption">Kit acompanha</p>
+          {product.map((product) => {
+            return (
+              <div key={product.id} className="product__container">
+                <h2 className="product__title">{product.title}</h2>
+                <img src={product.img} alt="anúncio de kit de câmeras" className="product__img" />
+                {/* <p className="product__caption">Kit acompanha</p>
             <ul className="product__list">
               <li>{product.recorder}</li>  
               <li>{product.cameras}</li>  
@@ -38,16 +38,17 @@ export default function Store() {
               <li>{product.cable}</li>  
               <li>{product.powerSupply}</li>  
               <li>{product.connectors}</li>  
-            </ul>
-            <NavLink to={""} className={"product__link"}>
+            </ul> */}
+                <a href={`https://wa.me/5521984870140?&text=${encodeURI(product.wppMsg)}`} target="_blank" rel="noreferrer" className="product__link" >
                   Consulte valores
-            </NavLink>
-          </div>
-        )}
-        )}
-      </div>
+                </a>
+              </div>
+            )
+          }
+          )}
+        </div>
       )}
-      
+
       <Footer />
     </div>
   )

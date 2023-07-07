@@ -1,20 +1,39 @@
 [
   {
     "id": 1,
-    "title": "Kit Analógico",
+    "title": "Kit Analógico Motorola Starter",
     "img": "img/card01.png",
-    "recorder": "DVR MOTOROLA DE 4 CANAIS",
-    "cameras": "4 CÂMERAS MOTOROLA FULL HD",
-    "storage": "HDD DE 1 TB",
-    "cable": "CAIXA DE 100 METROS CABO COAXIAL DE 4 MM COM 80% DE MALHA",
-    "powerSupply": "FONTE 12 V / 5 A",
-    "connectors": "8 CONECTORES BNC E 4 CONECTORES P4"
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit Analógico de 4 câmeras."
   },
   {
-    "id": 2,
+    "id": 3,
+    "title": "Kit IP Motorola Premium",
+    "img": "img/card02.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+  },
+  {
+    "id": 4,
+    "title": "Kit IP Motorola Master",
+    "img": "img/card03.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+  },
+  {
+    "id": 5,
     "title": "Kit IP",
-    "img": "img/card01.png",
-    "caption": "ACOMPANHA: DVR MOTOROLA 4 CANAIS FULL HD LITE, 4 CÂMERAS MOTOROLA FULL HD, HD 1TB, CABO COAXIAL 4MM 80% 100MT, FONTE 12V 5A, 8 BNC E 4 P4"
+    "img": "img/card02.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+  },
+  {
+    "id": 6,
+    "title": "Kit IP",
+    "img": "img/card02.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+  },
+  {
+    "id": 7,
+    "title": "Kit IP",
+    "img": "img/card02.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
   }
 
 ]
