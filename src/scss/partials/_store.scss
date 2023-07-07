@@ -1,9 +1,51 @@
-.store__container {
-  // outline: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-block: 5rem;
+.store {
+  &__container {
+    // outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 5rem;
+  }
+
+  &__title {
+    font-family: "Sony Sketch EF", sans-serif;
+    background: -webkit-linear-gradient(#f4de86, #947d40);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(5px 5px 2px #000);
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    line-height: 1.1;
+    user-select: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: "Sony Sketch EF", sans-serif;
+    background: -webkit-linear-gradient(#ccc, #aaa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(5px 5px 2px #000);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+    line-height: 1.1;
+    user-select: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    & > span {
+      font-weight: 600;
+      background: -webkit-linear-gradient(#f4de86, #947d40);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 .product {
@@ -92,10 +134,29 @@
 }
 
 @media (max-width: 55em) {
+  .store {
+    padding-top: 10rem;
+
+    &__title,
+    &__subtitle {
+      padding-inline: 1.5rem;
+    }
+
+    &__title {
+      font-size: 3.5rem;
+      margin-block: 1rem;
+      line-height: .8;
+    }
+
+    &__subtitle {
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+  }
+
   .product {
     &__container {
       max-width: calc(80% + 6rem);
-      margin-top: 5rem;
       margin-bottom: 0;
       margin-inline: 2rem;
       padding: 1.5rem;
