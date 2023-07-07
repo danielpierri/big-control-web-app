@@ -50,7 +50,11 @@ export default function Store() {
         </div>
       )}
 
-      <Footer />
+      <Footer style={{
+        backgroundColor:
+          "#222",
+        backdropFilter: "blur(10px)"
+      }} />
     </div>
   )
 }
