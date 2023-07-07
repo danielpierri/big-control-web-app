@@ -93,6 +93,8 @@
   }
   
   &__img {
+    outline: 1px solid #FFD36D;
+    border-radius: 5px;
     object-fit: contain;
     max-width: 100%;
     margin-inline: auto;
