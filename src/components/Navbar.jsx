@@ -41,27 +41,27 @@ export default function Navbar() {
           <ul className="nav__list">
             <li>
               <NavLink to="/" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
-                <a href={() => false}>HOME</a>
+                HOME
               </NavLink>
             </li>
             <li>
               <NavLink to="/store" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
-                <a href={() => false}>LOJA</a>
+                LOJA
               </NavLink>
             </li>
             <li>
               <NavLink to="/services" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
-                <a href={() => false}>SERVIÇOS</a>
+                SERVIÇOS
               </NavLink>
             </li>
             <li>
               <NavLink to="/projects" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
-                <a href={() => false}>PROJETOS</a>
+                PROJETOS
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
-                <a href={() => false}>CONTATO</a>
+                CONTATO
               </NavLink>
             </li>
           </ul>
