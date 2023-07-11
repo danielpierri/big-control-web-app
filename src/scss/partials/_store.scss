@@ -1,11 +1,26 @@
 .store {
-  background-color:  #222;
+  background: linear-gradient(0deg, #000 30%, #3D0000, #111 );
+
   &__container {
     // outline: 1px solid red;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-block: 5rem;
+
+    &::after {
+      content: "";
+      background: linear-gradient(to right, transparent, #FFD36D, transparent);
+      height: 1px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -50px;
+    }
   }
 
   &__title {

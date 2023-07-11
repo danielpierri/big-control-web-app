@@ -52,7 +52,7 @@ export default function Store() {
 
       <Footer style={{
         backgroundColor:
-          "#222",
+          "#000",
         backdropFilter: "blur(10px)"
       }} />
     </div>

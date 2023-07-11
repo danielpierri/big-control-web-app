@@ -1,39 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Kit Analógico Motorola Starter",
+    "title": "Kit Motorola Starter",
     "img": "img/card01.png",
     "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit Analógico de 4 câmeras."
   },
   {
     "id": 3,
-    "title": "Kit IP Motorola Premium",
+    "title": "Kit Motorola Premium",
     "img": "img/card02.png",
-    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit Motorola de 8 câmeras."
   },
   {
     "id": 4,
-    "title": "Kit IP Motorola Master",
+    "title": "Kit Motorola Master",
     "img": "img/card03.png",
-    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit Motorola de 16 câmeras."
   },
   {
     "id": 5,
-    "title": "Kit IP",
-    "img": "img/card02.png",
-    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+    "title": "Kit Motorola Platinum",
+    "img": "img/card04.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit Motorola de 32 câmeras."
   },
   {
     "id": 6,
-    "title": "Kit IP",
-    "img": "img/card02.png",
-    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
-  },
-  {
-    "id": 7,
-    "title": "Kit IP",
-    "img": "img/card02.png",
-    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit IP de 8 câmeras."
+    "title": "Kit Motorola Diamond",
+    "img": "img/card05.png",
+    "wppMsg": "Boa tarde! Eu gostaria de saber informações sobre o Kit Motorola de 64 câmeras."
   }
-
 ]
