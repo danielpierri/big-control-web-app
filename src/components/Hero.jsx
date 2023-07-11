@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-// import Fade from "./hooks/Fade"
+import { NavLink } from "react-router-dom"
 import Navbar from "./Navbar"
 import Phone from "./Phone"
 import "../App.scss"
@@ -78,7 +78,7 @@ export default function Hero() {
                 <p className="hero__cta__title">
                   Projetos,<br /> Execução e Manutenção
                 </p>
-                <a href="index.html" className="hero__cta">Conhecer</a>
+                <NavLink to={"/projects"} className={"hero__cta"}>Conhecer</NavLink>
               </div>
             </div>
 

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import cercaEletricaHome from "../img/cerca-eletrica-home.jpeg"
 import cftvHome from "../img/cftv-home.jpeg"
 import controleDeAcessoHome from "../img/controle-de-acesso-home.jpg"
@@ -21,7 +22,7 @@ export default function Main() {
               <img src={projetosHome} alt="projetos" className="main__img main__services__img" />
             </div>
             <p className="main__text">A Big Control conta com vários profissionais especializados e certificados em diversas áreas. Fazemos projetos específicos para seu condomínio ou empresa. Trabalhamos com projetos, execução, locação, manutenção e vendas. </p>
-            <a href="index.html" className="main__article__btn">Saiba mais</a>
+            <NavLink to={"/projects"} className={"main__article__btn"}>Saiba mais</NavLink>
           </div>
 
         </section>
@@ -35,7 +36,7 @@ export default function Main() {
               <img src={monitoramentoEmTempoReal} alt="monitoramento em tempo real" className="main__img main__services__img" />
             </div>
             <p className="main__text">Com nossa equipe especializada nos mais modernos sistemas de segurança eletrônica, monitoramos o funcionamento dos seus equipamentos remotamente e diariamente, local e em nuvem. Dessa forma, o cliente não precisa se preocupar se equipamento está gravando corretamente ou não, pois ele com certeza estará.</p>
-            <a href="index.html" className="main__article__btn">Saiba mais</a>
+            <NavLink to={"/projects"} className={"main__article__btn"}>Saiba mais</NavLink>
           </div>
 
         </section>
@@ -49,7 +50,7 @@ export default function Main() {
               <img src={manutencaoHome} alt="manutenção" className="main__img main__services__img" />
             </div>
             <p className="main__text">Nossa manutenção, tanto preventiva quanto corretiva, é a mais completa possível a fim de que reduza ao máximo possível o risco de ficar com o sistema de segurança inoperante.</p>
-            <a href="index.html" className="main__article__btn">Saiba mais</a>
+            <NavLink to={"/services"} className={"main__article__btn"}>Saiba mais</NavLink>
           </div>
 
         </section>
@@ -63,7 +64,7 @@ export default function Main() {
           <div className="main__info__container">
             <h3 className="main__title">CFTV</h3>
             <p className="main__text">Uma de nossas especialidades é o Circuito Fechado de Televisão, na Big Control presamos por um sistema inteligente que efetue a gravação 24h por dia. Você sabe se o seu sistema está gravando corretamente? E se o seu gravador for roubado, você sabe como proceder? Nós temos as soluções.</p>
-            <a href="index.html" className="main__btn">Continuar lendo</a>
+            <NavLink to={"/services"} className={"main__btn"}>Continuar lendo</NavLink>
           </div>
 
         </section>
@@ -77,7 +78,7 @@ export default function Main() {
           <div className="main__info__container">
             <h3 className="main__title">SEGURANÇA PERIMETRAL</h3>
             <p className="main__text">Existem mais de 8 tipos diferentes de produtos para segurança perimetral. Avaliamos a área do seu condomínio para adotar as que mais trarão segurança e proteção para a sua família. Além disso, nos preocupamos com a estética do perímetro, alinhando segurança e beleza.</p>
-            <a href="index.html" className="main__btn">Continuar lendo</a>
+            <NavLink to={"/services"} className={"main__btn"}>Continuar lendo</NavLink>
           </div>
 
         </section>
@@ -91,7 +92,7 @@ export default function Main() {
           <div className="main__info__container">
             <h3 className="main__title">CONTROLE DE ACESSO</h3>
             <p className="main__text">Outra especialidade nossa é o controle de acesso e telecomunicações, podemos te auxiliar na automatização do seu condomínio com soluções de ponta e na modernização ou implementação do sistema de sua empresa.</p>
-            <a href="index.html" className="main__btn">Continuar lendo</a>
+            <NavLink to={"/services"} className={"main__btn"}>Continuar lendo</NavLink>
           </div>
 
         </section>
