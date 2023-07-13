@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
+import { motion } from "framer-motion"
 import Navbar from "./Navbar"
 import Phone from "./Phone"
 import "../App.scss"
+import Main from "./Main"
+import Footer from "./Footer"
 
 const FADE_INTERVAL_MS = 5000
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
@@ -28,9 +31,20 @@ const WORDS_TO_ANIMATE = [
 ]
 
 export default function Hero() {
-
   const [fadeProp, setFadeProp] = useState({ fade: "fade-in"})
   const [wordOrder, setWordOrder] = useState(0)
+    const routeVariants = {
+    initial: {
+      y: "100vh"
+    },
+    final: {
+      y: "0vh",
+      transition: {
+        type: "spring",
+        mass: 0.1
+      }
+    }
+  }
 
   useEffect(() => {
     const fadeTimeout = setInterval(() => {
@@ -51,46 +65,57 @@ export default function Hero() {
 
   return (
     <>
-      <div className="hero__bg">
-        <div className="hero">
-
+        {/* <motion.div
+          variants={routeVariants}
+          initial="initial"
+          animate="final"
+        > */}
+          <div className="hero__bg">
           <Navbar />
 
-          <div className="hero__main">
+            <motion.div variants={routeVariants}
+          initial="initial"
+          animate="final" className="hero">
 
-            <div className="hero__content">
-              <h1 className="hero__title">Big<span className="white-text">Control</span></h1>
-              <p className="hero__description">
-                Segurança Eletrônica,
-                <br />
-                Perimetral e Controle de Acesso
-              </p>
-              <div className="hero__question__container">
-                  <p className="hero__question">
-                    <span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span>
+              <div className="hero__main">
+
+                <div className="hero__content">
+                  <h1 className="hero__title">Big<span className="white-text">Control</span></h1>
+                  <p className="hero__description">
+                    Segurança Eletrônica,
+                    <br />
+                    Perimetral e Controle de Acesso
                   </p>
+                  <div className="hero__question__container">
+                      <p className="hero__question">
+                        <span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span>
+                      </p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div className="hero__cta__wrapper">
-              <div className="hero__cta__container">
-                <p className="hero__cta__title">
-                  Projetos,<br /> Execução e Manutenção
-                </p>
-                <NavLink to={"/projects"} className={"hero__cta"}>Conhecer</NavLink>
+                <div className="hero__cta__wrapper">
+                  <div className="hero__cta__container">
+                    <p className="hero__cta__title">
+                      Projetos,<br /> Execução e Manutenção
+                    </p>
+                    <NavLink to={"/projects"} className={"hero__cta"}>Conhecer</NavLink>
+                  </div>
+                </div>
+
               </div>
+
+            </motion.div>
+            <Phone />
+            <div className="hero__hours">
+              <p>Segunda a sexta, 9h às 18h - WEBSITE EM PRODUÇÃO</p>
             </div>
 
           </div>
-
-          <Phone />
-          <div className="hero__hours">
-            <p>Segunda a sexta, 9h às 18h - WEBSITE EM PRODUÇÃO</p>
-          </div>
-        </div>
+          <Main />
+          <Footer />
+        {/* </motion.div> */}
         
-      </div>
     </>
   )
 }

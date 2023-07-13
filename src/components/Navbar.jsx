@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import logo from "../img/big-control-home.png"
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false)
   const [navBg, setNavBg] = useState(false)
+  const pathname = useLocation()
 
   const menuAction = (e) => {
     e.preventDefault()
@@ -24,6 +25,10 @@ export default function Navbar() {
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground)
   })
+
+  useEffect(() => {
+    setMenu(false)
+  }, [pathname])
 
   return (
     <div className={ navBg ? "nav__container--scrolled" : "nav__container"}>

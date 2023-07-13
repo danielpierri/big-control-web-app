@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from "react"
+import { motion } from "framer-motion"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import emailjs from "@emailjs/browser"
@@ -12,6 +13,19 @@ export default function Contact() {
     status: false
   })
   // Create useState as object, so it has a String and a Boolean
+
+  const routeVariants = {
+    initial: {
+      y: "100vh"
+    },
+    final: {
+      y: "0vh",
+      transition: {
+        type: "spring",
+        mass: 0.1
+      }
+    }
+  }
 
   function sendEmail(e) {
     e.preventDefault()
@@ -52,68 +66,76 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact__viewport">
+    <>
+      <div className="contact__viewport">
+        <Navbar />
 
-      <Navbar />
+        <motion.div
+          variants={routeVariants}
+          initial="initial"
+          animate="final"
 
-      <div className="contact">
-        <div className="contact__form__container">
-          <form className="form" onSubmit={sendEmail}>
+        >
+          <div className="contact">
+            <div className="contact__form__container">
+              <form className="form" onSubmit={sendEmail}>
 
-            <fieldset className="fieldset input-name">
-              <legend>Seu nome</legend>
-              <label htmlFor="name"></label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Digite seu nome"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-              />
-            </fieldset>
+                <fieldset className="fieldset input-name">
+                  <legend>Seu nome</legend>
+                  <label htmlFor="name"></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Digite seu nome"
+                    onChange={(e) => setName(e.target.value)}
+                    value={name}
+                  />
+                </fieldset>
 
-            <fieldset className="fieldset input-email">
-              <legend>Seu email</legend>
-              <label htmlFor="email"></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
-            </fieldset>
+                <fieldset className="fieldset input-email">
+                  <legend>Seu email</legend>
+                  <label htmlFor="email"></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                </fieldset>
 
-            <fieldset className="fieldset input-message">
-              <legend>Mensagem</legend>
-              <label htmlFor="text"></label>
-              <textarea
-                type="text"
-                id="message"
-                name="message"
-                placeholder="Escreva sua dúvida..."
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
-              ></textarea>
-            </fieldset>
+                <fieldset className="fieldset input-message">
+                  <legend>Mensagem</legend>
+                  <label htmlFor="text"></label>
+                  <textarea
+                    type="text"
+                    id="message"
+                    name="message"
+                    placeholder="Escreva sua dúvida..."
+                    onChange={(e) => setMessage(e.target.value)}
+                    value={message}
+                  ></textarea>
+                </fieldset>
 
-            <input className="form__btn" type="submit" value="ENVIAR" />
+                <input className="form__btn" type="submit" value="ENVIAR" />
 
-          </form>
-        </div>
+              </form>
+            </div>
+          </div>
+
+          <div className={submitMessage.status ? "submitMessage__container" : "submitMessage__container--hidden"}>
+            {submitMessage.status && submitMessage.message}
+          </div>
+
+        </motion.div>
+        <Footer style={{
+          backgroundColor:
+            "#22222271",
+          backdropFilter: "blur(10px)"
+        }} />
       </div>
-
-      <div className={submitMessage.status ? "submitMessage__container" : "submitMessage__container--hidden"}>
-        {submitMessage.status && submitMessage.message}
-      </div>
-
-      <Footer style={{
-        backgroundColor:
-          "#22222271",
-        backdropFilter: "blur(10px)"
-      }} />
-    </div>
-  );
+    </>
+  )
 }
