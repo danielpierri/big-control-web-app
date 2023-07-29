@@ -33,7 +33,8 @@ const WORDS_TO_ANIMATE = [
 export default function Hero() {
   const [fadeProp, setFadeProp] = useState({ fade: "fade-in"})
   const [wordOrder, setWordOrder] = useState(0)
-    const routeVariants = {
+  
+  const routeVariants = {
     initial: {
       y: "100vh"
     },
@@ -73,9 +74,12 @@ export default function Hero() {
           <div className="hero__bg">
           <Navbar />
 
-            <motion.div variants={routeVariants}
-          initial="initial"
-          animate="final" className="hero">
+            <motion.div 
+              variants={routeVariants}
+              initial="initial"
+              animate="final" 
+              className="hero"
+            >
 
               <div className="hero__main">
 
