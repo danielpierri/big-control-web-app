@@ -126,16 +126,17 @@
 
   &__cta {
     display: inline-block;
-    font-family: "Nunito", sans-serif;
-    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     background-color: $color-light-gold;
     border: none;
     border-radius: 0.25rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     letter-spacing: 0.15rem;
     padding: 1rem 2rem;
     cursor: pointer;
     text-decoration: none;
+    text-transform: uppercase;
     color: $color-black;
     transition: 0.2s;
 
