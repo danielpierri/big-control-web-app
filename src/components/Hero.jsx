@@ -73,9 +73,12 @@ export default function Hero() {
           <div className="hero__bg">
           <Navbar />
 
-            <motion.div variants={routeVariants}
-          initial="initial"
-          animate="final" className="hero">
+          <motion.div 
+            variants={routeVariants}
+            initial="initial"
+            animate="final"
+            className="hero"
+          >
 
               <div className="hero__main">
 
@@ -108,7 +111,7 @@ export default function Hero() {
             </motion.div>
             <Phone />
             <div className="hero__hours">
-              <p>Segunda a sexta, 9h às 18h - WEBSITE EM PRODUÇÃO</p>
+              <p>Segunda a sexta, 9h às 18h</p>
             </div>
 
           </div>
