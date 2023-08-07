@@ -33,7 +33,7 @@ const WORDS_TO_ANIMATE = [
 export default function Hero() {
   const [fadeProp, setFadeProp] = useState({ fade: "fade-in"})
   const [wordOrder, setWordOrder] = useState(0)
-    const routeVariants = {
+  const routeVariants = {
     initial: {
       y: "100vh"
     },
