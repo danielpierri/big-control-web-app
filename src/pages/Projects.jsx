@@ -74,7 +74,7 @@ export default function Project() {
                   <span>Manutenção</span>
                   <span>Locação</span>
                 </div>
-                <NavLink to={""} className={"project__btn"}>
+                <NavLink to={"/contact"} className={"project__btn"}>
                   Entre em contato
                 </NavLink>
 
@@ -98,7 +98,7 @@ export default function Project() {
                   <span>Reconhecimento Facial</span>
                   <span>Diagrama de ativos</span>
                 </div>
-                <NavLink to={""} className={"project__btn"}>
+                <NavLink to={"/contact"} className={"project__btn"}>
                   Faça um orçamento
                 </NavLink>
 
@@ -112,7 +112,7 @@ export default function Project() {
                 <p className="project__text">
                   Ao contratar o PROJETO DE SEGURANÇA da Big Control e posterior sua implantação, o valor do projeto é descontado de sua proposta de serviços e produtos.
                 </p>
-                <NavLink to={""} className={"project__btn"}>
+                <NavLink to={"/contact"} className={"project__btn"}>
                   Agende conosco
                 </NavLink>
               </div>
