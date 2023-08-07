@@ -1,5 +1,6 @@
 .store {
   background: linear-gradient(0deg, #000 30%, #3D0000, #111 );
+  height: 100vh;
 
   &__container {
     // outline: 1px solid red;
@@ -151,6 +152,7 @@
 
 @media (max-width: 55em) {
   .store {
+    height: 100svh;
     padding-top: 10rem;
 
     &__title,

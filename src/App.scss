@@ -113,6 +113,15 @@ body {
   }
 }
 
+.loader__container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @keyframes scroll-top-btn-fade-in {
   from {opacity: 0;}
   to {opacity: 1;}

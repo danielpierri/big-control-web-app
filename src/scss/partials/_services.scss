@@ -1,11 +1,8 @@
 @import "../variables/variables";
 
-.services__container * {
-  // outline: 1px solid red;
-}
-
 .services {
   &__bg {
+    height: 100vh;
     background: linear-gradient(0deg,#111 30%, #252525, #111 );
   }
 
@@ -171,6 +168,10 @@
 
 @media (max-width: 55em) {
   .services {
+    &__bg {
+      height: 100svh;
+    }
+    
     &__container {
       padding-top: 10rem;
     }
