@@ -1,6 +1,14 @@
 .store {
+  &--pre-loading {
+    height: 100vh;
+    background: linear-gradient(#000, #3D0000, #111 );
+  }
+
+  &--post-loading {
+    background: linear-gradient(#111, #3D0000)
+  }
+
   background: linear-gradient(0deg, #000 30%, #3D0000, #111 );
-  height: 100vh;
 
   &__container {
     // outline: 1px solid red;

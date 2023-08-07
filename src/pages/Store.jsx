@@ -45,7 +45,7 @@ export default function Store() {
 
   return (
     <>
-      <div className="store">
+      <div className={loading ? "store--pre-loading" : "store--post-loading"}>
 
         <Navbar />
         {loading ? (
@@ -59,6 +59,7 @@ export default function Store() {
           </div>
         ) : (
           <>
+            <div className="store">
             <motion.div
               variants={routeVariants}
               initial="initial"
@@ -98,7 +99,7 @@ export default function Store() {
                 backdropFilter: "blur(10px)"
               }} />
             </motion.div>
-
+            </div>
           </>
         )}
       </div>

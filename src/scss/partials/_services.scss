@@ -1,8 +1,17 @@
 @import "../variables/variables";
 
 .services {
-  &__bg {
+  &--pre-loading {
     height: 100vh;
+    background: linear-gradient(0deg,#111, #252525, #111 );
+  }
+
+  &--post-loading {
+    background: linear-gradient(#111, #252525)
+  }
+
+
+  &__bg {
     background: linear-gradient(0deg,#111 30%, #252525, #111 );
   }
 

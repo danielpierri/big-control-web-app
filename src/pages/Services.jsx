@@ -50,7 +50,7 @@ export default function Services() {
 
   return (
     <>
-      <div className="services__bg" >
+      <div className={loading ? "services--pre-loading" : "services--post-loading"}>
       <Navbar />
         <ScrollToTopBtn />
         {loading ? (
@@ -64,6 +64,7 @@ export default function Services() {
           </div>
         ) : (
           <>
+            <div className="services__bg" >
             <motion.div 
               className="services__container"
               variants={routeVariants}
@@ -248,11 +249,12 @@ export default function Services() {
                 </div>
               </main>
             </motion.div>
-            <Footer />
-            <Phone />
+            </div>  
           </>
         )}
-      </div>
+        </div>
+        <Footer />
+        <Phone />
     </>
   )
 }
