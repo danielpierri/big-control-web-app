@@ -43,6 +43,7 @@ export default function Hero() {
 
   const [fadeProp, setFadeProp] = useState({ fade: "fade-in" })
   const [wordOrder, setWordOrder] = useState(0)
+
   const routeVariants = {
     initial: {
       y: "100vh",
