@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const menuAction = (e) => {
     e.preventDefault()
-    setMenu(prevMenu => !prevMenu)
+    setMenu((prevMenu) => !prevMenu)
   }
 
   const changeBackground = () => {
@@ -31,41 +31,89 @@ export default function Navbar() {
   }, [pathname])
 
   return (
-    <div className={ navBg ? "nav__container--scrolled" : "nav__container"}>
+    <div className={navBg ? "nav__container--scrolled" : "nav__container"}>
       <nav className="nav">
         <div>
           <img src={logo} alt="Big Control logo" />
-          {/* <label className="menu-hamburger hidden">
-            <input type="checkbox"/>
-          </label> */}
           <div className="menu-wrapper__btn" onClick={menuAction}>
-            <button id="menu-btn" className={menu ? "menu__btn--active" : "menu__btn"}></button>
+            <button
+              id="menu-btn"
+              className={menu ? "menu__btn--active" : "menu__btn"}
+            ></button>
           </div>
         </div>
-        <div id="nav-wrapper" className={menu ? "nav__wrapper--isDisplayed" : "nav__wrapper"}>
+        <div
+          id="nav-wrapper"
+          className={menu ? "nav__wrapper--isDisplayed" : "nav__wrapper"}
+        >
           <ul className="nav__list">
             <li>
-              <NavLink to="/" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+              <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "nav__link pending"
+                    : isActive
+                    ? "nav__link active"
+                    : "nav__link"
+                }
+              >
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="/store" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+              <NavLink
+                to="/store"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "nav__link pending"
+                    : isActive
+                    ? "nav__link active"
+                    : "nav__link"
+                }
+              >
                 LOJA
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+              <NavLink
+                to="/services"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "nav__link pending"
+                    : isActive
+                    ? "nav__link active"
+                    : "nav__link"
+                }
+              >
                 SERVIÇOS
               </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+              <NavLink
+                to="/projects"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "nav__link pending"
+                    : isActive
+                    ? "nav__link active"
+                    : "nav__link"
+                }
+              >
                 PROJETOS
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "nav__link pending"
+                    : isActive
+                    ? "nav__link active"
+                    : "nav__link"
+                }
+              >
                 CONTATO
               </NavLink>
             </li>
