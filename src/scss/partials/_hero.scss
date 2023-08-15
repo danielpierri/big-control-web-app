@@ -187,10 +187,10 @@
     &__video {
       position: relative;
       overflow: hidden;
-      border: 3px solid #ffd36d;
+      border: 5px double #ffd36d;
       border-radius: 5px;
       margin-bottom: 2rem;
-      box-shadow: 0px 0px 10px #d6b34b;
+      box-shadow: 0px 0px 15px #000;
 
       &::after {
         position: absolute;
