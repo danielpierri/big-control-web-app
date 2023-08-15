@@ -109,9 +109,9 @@ export default function Hero() {
                     Big<span className="white-text">Control</span>
                   </h1>
                   <p className="hero__description">
-                    Segurança Eletrônica,
+                    Segurança Eletrônica
                     <br />
-                    Perimetral e Controle de Acesso
+                     e Controle de Acesso
                   </p>
                   <div className="hero__question__container">
                     <p className="hero__question">
