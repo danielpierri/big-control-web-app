@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import PropagateLoader from "react-spinners/PropagateLoader"
 import Navbar from "./Navbar"
 import Phone from "./Phone"
-import "../App.scss"
 import Main from "./Main"
 import Footer from "./Footer"
+import "../App.scss"
+import video from "../videos/teste.mp4"
+// import Slider from "./utils/Slider"
 
 const FADE_INTERVAL_MS = 5000
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
@@ -80,6 +82,7 @@ export default function Hero() {
 
   return (
     <>
+      {/* <Slider /> */}
       <div className="hero__bg">
         <Navbar />
 
@@ -106,9 +109,9 @@ export default function Hero() {
                     Big<span className="white-text">Control</span>
                   </h1>
                   <p className="hero__description">
-                    Segurança Eletrônica,
+                    Segurança Eletrônica
                     <br />
-                    Perimetral e Controle de Acesso
+                     e Controle de Acesso
                   </p>
                   <div className="hero__question__container">
                     <p className="hero__question">
@@ -118,9 +121,13 @@ export default function Hero() {
                     </p>
                   </div>
                 </div>
-
                 <div className="hero__cta__wrapper">
                   <div className="hero__cta__container">
+                    <figure className="hero__cta__video">
+                      <video width="500" height="281.25" autoPlay loop muted >
+                        <source src={video} />
+                      </video>
+                    </figure>
                     <p className="hero__cta__title">
                       Projetos,
                       <br /> Execução e Manutenção

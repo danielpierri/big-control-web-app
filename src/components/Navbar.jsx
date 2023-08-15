@@ -34,7 +34,9 @@ export default function Navbar() {
     <div className={navBg ? "nav__container--scrolled" : "nav__container"}>
       <nav className="nav">
         <div>
-          <img src={logo} alt="Big Control logo" />
+          <NavLink to={"/"}>
+            <img src={logo} alt="Big Control logo" className="nav__logo" />
+          </NavLink>
           <div className="menu-wrapper__btn" onClick={menuAction}>
             <button
               id="menu-btn"
