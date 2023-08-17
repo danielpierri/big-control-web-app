@@ -14,7 +14,6 @@
 }
 
 .contact {
-  padding-top: 15rem;
   margin-bottom: 2rem;
   font-size: 2rem;
   display: flex;
@@ -164,6 +163,14 @@
   }
 }
 
+// DESKTOP
+@media (min-width: 55em) {
+  .contact {
+    padding-top: 15rem;
+  }
+}
+
+// MOBILE
 @media (max-width: 55em) {
   .contact__viewport {
     padding-top: 10rem;
