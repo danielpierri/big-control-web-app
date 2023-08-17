@@ -6,9 +6,9 @@ import ScrollToTopBtn from "../components/utils/ScrollToTopBtn"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Phone from "../components/Phone"
-import projetosCondominio from "../img/projetos-condominio.jpg"
+import projetosCondominio from "../img/projeto-6.jpg"
 import projetosLargaEscala from "../img/projetos-larga-escala.jpg"
-import projetosConsultoria from "../img/projetos-consultoria.jpg"
+import projetosConsultoria from "../img/projeto-3.jpg"
 
 export default function Project() {
   // Loading Screen
