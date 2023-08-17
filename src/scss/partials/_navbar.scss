@@ -5,7 +5,6 @@
 .nav {
   display: flex;
   position: relative;
-  // border: 1px solid red;
 
   &::after {
     content: "";
@@ -18,6 +17,9 @@
     left: 0;
     right: 0;
     top: 0;
+  }
+
+  &__container {
   }
 }
 
@@ -50,6 +52,43 @@
 }
 
 @media (min-width: 55em) {
+
+  .nav {
+    position: relative;
+    display: flex;
+    z-index: 1000;
+    
+    &__container,
+    &__container--scrolled {
+      // border: 1px solid red;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: background .25s;
+    }
+    
+    &__container--scrolled {
+      background-color: #22222295;
+      z-index: 1000;
+    }
+
+    &__container--scrolled::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    &__logo {
+      height: 100px;
+      padding-left: 3rem;
+    } 
+  }
   .hidden {
     display: none;
   }
@@ -66,9 +105,9 @@
   .nav__list {
     align-items: center;
     // I am using px because of the logo, to be easier to change proportionally.
-    margin-top: 50px;
+    margin-top: 37.5px;
     margin-right: 3em;
-    /* border: 1px solid red; */
+    // border: 1px solid red;
   }
   
   .nav__link {
@@ -142,11 +181,6 @@
   .nav__link:focus::after {
     animation: none;
     box-shadow: 0 0 10px #ffd36d;
-  }
-  
-  nav img {
-    height: 150px;
-    margin-left: 3em;
   }
 
   .menu-wrapper__btn {

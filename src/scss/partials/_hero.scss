@@ -1,6 +1,7 @@
 @import "../variables/variables";
 
 .hero {
+  height: 100vh;
   &__bg {
     background-color: #aaa;
     background-image: url(./img/hero-background.png);
@@ -36,6 +37,7 @@
 
   &__main {
     display: flex;
+    height: 100vh;
   }
 
   &__content {
@@ -215,7 +217,7 @@
 
     &__main {
       justify-content: space-between;
-      margin-top: 15rem;
+      padding-top: 15rem;
       max-width: 1300px;
       margin-right: auto;
       margin-left: auto;
@@ -264,7 +266,7 @@
     }
 
     &__main {
-      margin-top: 5rem;
+      margin-top: 0rem;
       max-width: 1200px !important;
     }
 

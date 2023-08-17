@@ -15,7 +15,6 @@
   &__container {
     max-width: 900px;
     margin-inline: auto;
-    padding-top: 3rem;
     padding-bottom: 5rem;
   }
 
@@ -166,6 +165,7 @@
 
 @media (min-width: 55em) {
   .projects {
+    padding-top: 15rem;
     gap: 2rem;
   }
 }

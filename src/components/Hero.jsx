@@ -84,7 +84,7 @@ export default function Hero() {
     <>
       {/* <Slider /> */}
       <div className="hero__bg">
-        <Navbar />
+      <Navbar />
 
         {loading ? (
           <div className="loader__container">

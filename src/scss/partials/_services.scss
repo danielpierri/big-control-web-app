@@ -169,6 +169,8 @@
 
 @media (min-width: 55em) {
   .service {
+    padding-top: 15rem;
+
     &__img {
       outline: 1px solid $color-accent-gold;
     }
