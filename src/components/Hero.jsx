@@ -143,11 +143,11 @@ export default function Hero() {
             <div className="hero__hours">
               <p>Segunda a sexta, 9h às 18h</p>
             </div>
+            <Main />
+            <Footer />
           </>
         )}
       </div>
-      <Main />
-      <Footer />
     </>
   )
 }

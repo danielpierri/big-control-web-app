@@ -250,11 +250,11 @@ export default function Services() {
               </main>
             </motion.div>
             </div>  
+            <Footer />
+            <Phone />
           </>
         )}
         </div>
-        <Footer />
-        <Phone />
     </>
   )
 }
