@@ -1,9 +1,20 @@
-.slider {
-  text-align: center;
-  margin-top: 30px;
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  // outline: 1px solid red;
+  color: #d6b34b !important;
+  width: fit-content !important;
+  top: 20% !important;
+  transform: scale(.5);
+  opacity: .8;
 }
 
-.slider__flex {
-  display: flex;
-  justify-content: center;
+@media (max-width: 55em) {
+  .swiper-button-next,
+  .swiper-button-prev {
+  top: 10% !important;
+  transform: scale(.25) !important;
+  opacity: .8;
+}
 }

@@ -8,30 +8,53 @@ import Main from "./Main"
 import Footer from "./Footer"
 import "../App.scss"
 import video from "../videos/teste.mp4"
+import Slider from "./utils/Slider"
+
 // import Slider from "./utils/Slider"
 
-const FADE_INTERVAL_MS = 5000
-const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
-const WORDS_TO_ANIMATE = [
-  "Monitoramento humano em tempo real funciona?",
-  "Quando devo utilizar tecnologia IP?",
-  "Quais Analíticos Inteligentes servem para meu condomínio?",
-  "Se existem tantos produtos para segurança, como você sabe que o seu é o mais adequado?",
-  "Você sabia que existe profissional especializado em projeto de segurança eletrônica e controle de acesso?",
-  "Qual o melhor projeto de segurança para pequenos prédios?",
-  "Gravação em nuvem. Quanto tempo seu condomínio ou empresa precisa?",
-  "Você sabe se o seu equipamento de segurança está gravando?",
-  "Câmera IP ou Analógica? Qual devo usar?",
-  "Segurança Perimetral. Qual a solução mais indicada?",
-  "Gravação de áudio é permitida?",
-  "Onde economizar e onde não economizar?",
-  "Como é a segurança do seu equipamento de segurança?",
-  "Gravação por movimento ou contínua?",
-  "Você sabe se suas câmeras estão gravando?",
-  "Você sabia que 90% dos roubos são de pessoas de dentro?",
-  "Você sabia que é possível combinar beleza e segurança?",
-  "O que fazer se o DVR for roubado?",
-]
+// const FADE_INTERVAL_MS = 5000
+// const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
+// const WORDS_TO_ANIMATE = [
+//   "Monitoramento humano em tempo real funciona?",
+//   "Quando devo utilizar tecnologia IP?",
+//   "Quais Analíticos Inteligentes servem para meu condomínio?",
+//   "Se existem tantos produtos para segurança, como você sabe que o seu é o mais adequado?",
+//   "Você sabia que existe profissional especializado em projeto de segurança eletrônica e controle de acesso?",
+//   "Qual o melhor projeto de segurança para pequenos prédios?",
+//   "Gravação em nuvem. Quanto tempo seu condomínio ou empresa precisa?",
+//   "Você sabe se o seu equipamento de segurança está gravando?",
+//   "Câmera IP ou Analógica? Qual devo usar?",
+//   "Segurança Perimetral. Qual a solução mais indicada?",
+//   "Gravação de áudio é permitida?",
+//   "Onde economizar e onde não economizar?",
+//   "Como é a segurança do seu equipamento de segurança?",
+//   "Gravação por movimento ou contínua?",
+//   "Você sabe se suas câmeras estão gravando?",
+//   "Você sabia que 90% dos roubos são de pessoas de dentro?",
+//   "Você sabia que é possível combinar beleza e segurança?",
+//   "O que fazer se o DVR for roubado?",
+// ]
+
+// const questions = [
+//   {id: 0, question: "Monitoramento humano em tempo real funciona?"},
+//   {id: 1, question: "Quando devo utilizar tecnologia IP?"},
+//   {id: 2, question: "Quais Analíticos Inteligentes servem para meu condomínio?"},
+//   {id: 3, question: "Se existem tantos produtos para segurança, como você sabe que o seu é o mais adequado?"},
+//   {id: 4, question: "Você sabia que existe profissional especializado em projeto de segurança eletrônica e controle de acesso?"},
+//   {id: 5, question: "Qual o melhor projeto de segurança para pequenos prédios?"},
+//   {id: 6, question: "Gravação em nuvem. Quanto tempo seu condomínio ou empresa precisa?"},
+//   {id: 7, question: "Você sabe se o seu equipamento de segurança está gravando?"},
+//   {id: 8, question: "Câmera IP ou Analógica? Qual devo usar?"},
+//   {id: 9, question: "Segurança Perimetral. Qual a solução mais indicada?"},
+//   {id: 10, question: "Gravação de áudio é permitida?"},
+//   {id: 11, question: "Onde economizar e onde não economizar?"},
+//   {id: 12, question: "Como é a segurança do seu equipamento de segurança?"},
+//   {id: 13, question: "Gravação por movimento ou contínua?"},
+//   {id: 14, question: "Você sabe se suas câmeras estão gravando?"},
+//   {id: 15, question: "Você sabia que 90% dos roubos são de pessoas de dentro?"},
+//   {id: 0, question: "Você sabia que é possível combinar beleza e segurança?"},
+//   {id: 0, question: "O que fazer se o DVR for roubado?"}
+// ]
 
 export default function Hero() {
   // Loading Screen
@@ -43,8 +66,8 @@ export default function Hero() {
     }, 2000)
   }, [])
 
-  const [fadeProp, setFadeProp] = useState({ fade: "fade-in" })
-  const [wordOrder, setWordOrder] = useState(0)
+  // const [fadeProp, setFadeProp] = useState({ fade: "fade-in" })
+  // const [wordOrder, setWordOrder] = useState(0)
 
   const routeVariants = {
     initial: {
@@ -59,26 +82,26 @@ export default function Hero() {
     },
   }
 
-  useEffect(() => {
-    const fadeTimeout = setInterval(() => {
-      fadeProp.fade === "fade-in"
-        ? setFadeProp({ fade: "fade-out" })
-        : setFadeProp({ fade: "fade-in" })
-    }, FADE_INTERVAL_MS)
+  // useEffect(() => {
+  //   const fadeTimeout = setInterval(() => {
+  //     fadeProp.fade === "fade-in"
+  //       ? setFadeProp({ fade: "fade-out" })
+  //       : setFadeProp({ fade: "fade-in" })
+  //   }, FADE_INTERVAL_MS)
 
-    return () => clearInterval(fadeTimeout)
-  }, [fadeProp])
+  //   return () => clearInterval(fadeTimeout)
+  // }, [fadeProp])
 
   // In the future, implement a slider.
-  useEffect(() => {
-    const wordTimeout = setInterval(() => {
-      setWordOrder(
-        (prevWordOrder) => (prevWordOrder + 1) % WORDS_TO_ANIMATE.length
-      )
-    }, WORD_CHANGE_INTERVAL_MS)
+  // useEffect(() => {
+  //   const wordTimeout = setInterval(() => {
+  //     setWordOrder(
+  //       (prevWordOrder) => (prevWordOrder + 1) % WORDS_TO_ANIMATE.length
+  //     )
+  //   }, WORD_CHANGE_INTERVAL_MS)
 
-    return () => clearInterval(wordTimeout)
-  }, [])
+  //   return () => clearInterval(wordTimeout)
+  // }, [])
 
   return (
     <>
@@ -113,13 +136,16 @@ export default function Hero() {
                     <br />
                      e Controle de Acesso
                   </p>
-                  <div className="hero__question__container">
+                  <div>
+                    <Slider />
+                  </div>
+                  {/* <div className="hero__question__container">
                     <p className="hero__question">
                       <span className={fadeProp.fade}>
                         {WORDS_TO_ANIMATE[wordOrder]}
                       </span>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="hero__cta__wrapper">
                   <div className="hero__cta__container">
