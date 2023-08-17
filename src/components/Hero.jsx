@@ -7,7 +7,7 @@ import Phone from "./Phone"
 import Main from "./Main"
 import Footer from "./Footer"
 import "../App.scss"
-import video from "../videos/teste.mp4"
+// import video from "../videos/teste.mp4"
 import Slider from "./utils/Slider"
 
 // import Slider from "./utils/Slider"
@@ -149,11 +149,11 @@ export default function Hero() {
                 </div>
                 <div className="hero__cta__wrapper">
                   <div className="hero__cta__container">
-                    <figure className="hero__cta__video">
+                    {/* <figure className="hero__cta__video">
                       <video width="500" height="281.25" autoPlay loop muted >
                         <source src={video} />
                       </video>
-                    </figure>
+                    </figure> */}
                     <p className="hero__cta__title">
                       Projetos,
                       <br /> Execução e Manutenção
