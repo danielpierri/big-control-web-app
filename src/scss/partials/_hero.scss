@@ -2,6 +2,7 @@
 
 .hero {
   height: 100vh;
+
   &__bg {
     background-color: #aaa;
     background-image: url(./img/hero-background.png);
@@ -377,7 +378,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 7.5rem;
       margin-top: 0;
     }
 
@@ -404,7 +404,7 @@
     }
 
     &__cta {
-      font-size: 2rem;
+      font-size: 1.75rem;
 
       &__wrapper {
         display: flex;
@@ -422,6 +422,7 @@
         font-size: 2rem;
         font-weight: 300;
         letter-spacing: 3px;
+        line-height: 1.2;
         max-width: min-content;
         margin-inline: auto;
       }
@@ -432,7 +433,7 @@
     }
 
     &__question {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       align-self: center;
       justify-self: center;
       letter-spacing: 0.35rem;
