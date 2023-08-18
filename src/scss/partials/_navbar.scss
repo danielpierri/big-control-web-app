@@ -24,8 +24,6 @@
 }
 
 .nav__list {
-  font-size: 1.5rem;
-  font-weight: 500;
   display: flex;
   list-style: none;
   /* border: 1px solid red; */
@@ -104,6 +102,8 @@
   }
   
   .nav__list {
+    font-size: 1.5rem;
+    font-weight: 500;
     align-items: center;
     // I am using px because of the logo, to be easier to change proportionally.
     margin-top: 37.5px;
@@ -191,6 +191,13 @@
   
 }
 
+/* (1280x1024) DESKTOP */
+@media (min-width: 55em) and (max-width: 100em) {
+  .nav__list {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 55em) {
   .nav {
     position: relative;
@@ -275,6 +282,8 @@
   }
 
   .nav__list {
+    font-size: 1.5rem;
+    font-weight: 500;
     flex-direction: column;
     justify-content: center;
     min-width: max-content;

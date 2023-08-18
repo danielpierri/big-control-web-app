@@ -272,7 +272,8 @@
     }
 
     &__content {
-      margin-top: 0rem;
+      margin-top: 2.5rem;
+      margin-left: 10rem;
     }
 
     &__title {
@@ -290,8 +291,9 @@
       line-height: 1.5;
 
       &__container {
-        margin-top: 7.5rem;
-        width: 60rem;
+        margin-top: 10rem;
+        min-width: 40rem;
+        min-height: 15rem !important;
       }
     }
 
